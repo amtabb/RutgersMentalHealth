@@ -6,6 +6,8 @@
   "engines": {
     "node": "14.x"
    }
+}
+{
 
   "name": "react-package",
   "scripts": {

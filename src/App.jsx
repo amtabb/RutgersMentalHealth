@@ -105,4 +105,3 @@ const eventsPageData = {
   rectangle33: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/rectangle-33@1x.png",
   rectangle32: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/rectangle-32@2x.png",
 };
-

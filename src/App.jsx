@@ -4,7 +4,6 @@ import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import InspirationPage from "./components/InspirationPage";
 import LandingPage from "./components/LandingPage";
 import EventsPage from "./components/EventsPage";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (

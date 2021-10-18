@@ -52,7 +52,7 @@ const inspirationPageData = {
     text5: "“There is a crack in everything, that’s how the light gets in” ― Leonard Cohen",
     text8: "Write your favourite quotes to inspire......",
     postAnomyously: "Post Anomyously!",
-    post: "Post!",
+    postButton: "Post!",
 };
 
 const landingPageData = {

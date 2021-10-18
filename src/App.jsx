@@ -34,6 +34,7 @@ const inspirationPageData = {
   image3: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/image-3@2x.png",
   image9: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/image-9@2x.png",
   image1: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/image-1@2x.png",
+  image10: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/post-div@2x.svg",
     anonymous: "anonymous",
     anonymous2: "anonymous",
     anonymous3: "anonymous",

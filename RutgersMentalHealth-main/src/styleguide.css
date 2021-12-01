@@ -1,0 +1,100 @@
+:root { 
+  --black: #000000;
+  --desert-storm: #f8f8f8;
+  --mist-gray: #c4c4c4;
+  --red: #fb0b0b;
+  --roman: #e66161;
+  --soapstone: #fff9f9;
+  --white: #ffffff;
+  --wild-sand: #f5f4f4;
+ 
+  --font-size-l: 18px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 30px;
+  --font-size-xxxxl: 36px;
+ 
+  --font-family-mulish: "Mulish", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.mulish-bold-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-normal-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mulish-bold-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-desert-storm-24px {
+  color: var(--desert-storm);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-roman-24px {
+  color: var(--roman);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-wild-sand-24px {
+  color: var(--wild-sand);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-desert-storm-36px {
+  color: var(--desert-storm);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-white-36px {
+  color: var(--white);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mulish-bold-wild-sand-36px {
+  color: var(--wild-sand);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}

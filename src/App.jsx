@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import InspirationPage from "./components/InspirationPage";
+import {InspirationPage} from "./components/InspirationPage/inspirationPage";
 import LandingPage from "./components/LandingPage";
 import EventsPage from "./components/EventsPage";
 
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/inspiration-page">
-          <InspirationPage {...inspirationPageData} />
+          <InspirationPage inspirationPageData={inspirationPageData} />
         </Route>
         <Route path="/:path(|landing-page)">
           <LandingPage {...landingPageData} />
@@ -105,3 +105,4 @@ const eventsPageData = {
   rectangle33: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/rectangle-33@1x.png",
   rectangle32: "https://anima-uploads.s3.amazonaws.com/projects/616aefdea0da141d1d1257f2/releases/616aefedfb3cbe0f950cdb69/img/rectangle-32@2x.png",
 };
+

@@ -21,7 +21,7 @@ connection.getConnection((err,data)=>{
     }
 });
 
-app.listen(3001,()=>{
+app.listen(80,()=>{
     console.log("server is started");
 });
 

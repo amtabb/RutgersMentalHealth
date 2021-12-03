@@ -83,33 +83,18 @@ app.get("/mainposts",(req,res)=>{
  });
   
  
- 
-/*
-//insert into inspirationposts
-app.post("/insertinspirationposts",(req,res)=>{
-
-    console.log(req.body.inspirationpost);
-    // postid should not be passed; DB can auto generate; same for date
-    let post = {postid: 25, post: req.body.inspirationpost, usertype: "anonymous", date: (new Date()).toISOString()}
-    let sql = 'Insert into inspirationposts Set ?'
-    let query = connection.query(sql,post,err => {
-        if(err){
-           res.send("there are some error"); 
-        
-          }
-          res.send("inspiration post added"); 
-         
-    })
-   
-});
-*/
 app.get("/events",(req,res)=>{
     connection.query("select * from events",(err,rows,feilds)=>{
         if(err){
            res.send("there are some error"); 
         return;
           }
-          res.status(200).json(rows);
-    })
-
-})
+          res.status(200).json(rows.map((row)=>{
+              return{
+                  date:row.event_date, 
+                  location:row.event_location,
+                  seats:row.event_seats,
+                  speakers:row.event_speakers,
+                  about:row.event_about,
+              }
+          }));

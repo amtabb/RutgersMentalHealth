@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./LandingPage.css";
 import Axios from 'axios'
  
-const url = 'http://localhost:3001/';
+const url = 'https://rutgersmentalhealth.herokuapp.com/';
  
 export function LandingPage(props) {
  const [postData, setPostData] = useState(undefined);

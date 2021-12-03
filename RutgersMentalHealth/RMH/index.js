@@ -89,12 +89,7 @@ app.get("/events",(req,res)=>{
            res.send("there are some error"); 
         return;
           }
-          res.status(200).json(rows.map((row)=>{
-              return{
-                  date:row.event_date, 
-                  location:row.event_location,
-                  seats:row.event_seats,
-                  speakers:row.event_speakers,
-                  about:row.event_about,
-              }
-          }));
+          res.status(200).json(rows);
+    })
+
+})

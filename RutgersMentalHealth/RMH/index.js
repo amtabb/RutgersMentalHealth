@@ -1,8 +1,6 @@
 const express=require("express");
-
 const app=express();
 const mysql=require("mysql");
-
 const connection = mysql.createPool({
     host:"us-cdbr-east-04.cleardb.com", 
     user:"b67965676b9bc1",
@@ -20,11 +18,9 @@ connection.getConnection((err,data)=>{
         console.log("sucessfully corrected to the database");
     }
 });
-
 app.listen(3001,()=>{
     console.log("server is started");
 });
-
 // displaying inspirationposts
 app.get("/inspirationposts",(req,res)=>{
     connection.query("select * from inspirationposts",(err,rows,feilds)=>{
@@ -36,9 +32,7 @@ app.get("/inspirationposts",(req,res)=>{
     })
     
 });
-
 //insert into inspirationposts
-
 app.get("/insertinspirationposts",(req,res)=>{
     
     let post = {post: req.query.post, usertype: "anonymous", date: (new Date()).toISOString()}
@@ -89,15 +83,7 @@ app.get("/events",(req,res)=>{
            res.send("there are some error"); 
         return;
           }
-          res.status(200).json(rows.map((row)=>{
-              return{
-                  date:row.event_date, 
-                  location:row.event_location,
-                  seats:row.event_seats,
-                  speakers:row.event_speakers,
-                  about:row.event_about,
-              }
-          }));
+          res.status(200).json(rows);
     })
 
 })

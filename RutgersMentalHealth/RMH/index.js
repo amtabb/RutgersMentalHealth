@@ -21,7 +21,7 @@ connection.getConnection((err,data)=>{
     }
 });
 
-app.listen(443,()=>{
+app.listen(process.env.PORT || 3001,() =>{
     console.log("server is started");
 });
 

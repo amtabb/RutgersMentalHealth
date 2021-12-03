@@ -4,7 +4,7 @@ import "./InspirationPage.css";
 import Axios from 'axios'
 import { useCallback } from "react";
 
-const url = 'http://localhost:3001/';
+const url = 'https://rutgersmentalhealth.herokuapp.com/';
 //getting allposts
 export function InspirationPage(props) {
     const [postData, setPostData] = useState(undefined);

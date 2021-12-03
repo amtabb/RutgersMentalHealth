@@ -62,7 +62,7 @@ const {
  prepareRow
 }=tableInstant;
 React.useEffect(()=>{
- fetch("https://rutgersmentalhealth.herokuapp.com/events").then(res=>res.json()).then(res=>settabledata(res));
+ fetch("http://localhost:3001/events").then(res=>res.json()).then(res=>settabledata(res));
 },[]);
  return (
    <div className="container-center-horizontal">

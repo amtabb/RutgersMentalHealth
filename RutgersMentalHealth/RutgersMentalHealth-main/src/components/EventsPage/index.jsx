@@ -50,9 +50,13 @@ function EventsPage(props) {
    rectangle32,
  } = props;
  const [tabledata,settabledata]=useState([]);
+ const [q,setQ]=useState("");
+const search=(rows)=>{
+return rows.filter(row=>row.about.indexOf(q)>-1);
+}
 const tableInstant=useTable({
  columns,
- data:tabledata
+ data:search(tabledata) 
 })
 const {
  getTableBodyProps,
@@ -71,7 +75,13 @@ React.useEffect(()=>{
          <div className="images-2">
            <img className="logo-2" src={logo} />
            <img className="image-4-2" src={image4} />
-          
+           <div className="overlap-group-4">
+              <img className="icon-search-icon-2" src="/img/icon-search-icon@2x.svg" />
+            
+              <input className="searchplaceholde-2 mulish-bold-roman-24px" type="text" placeholder={searchPlaceholde}
+              value={q} onChange={e=>setQ(e.target.value)}/>
+
+            </div>
            <img className="image-3-2" src={image3} />
          </div>
          <div className="overlap-group1-3">

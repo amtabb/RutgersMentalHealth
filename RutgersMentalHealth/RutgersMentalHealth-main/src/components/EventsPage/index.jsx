@@ -76,7 +76,7 @@ React.useEffect(()=>{
            <img className="logo-2" src={logo} />
            <img className="image-4-2" src={image4} />
           <div className="overlap-group-4">
-              <img className="icon-search-icon-2" src="/img/icon-search-icon@2x.svg" />
+              <img className="icon-search-icon-2"  />
             
               <input className="searchplaceholde-2 mulish-bold-roman-24px" type="text" placeholder={searchPlaceholde}
               value={q} onChange={e=>setQ(e.target.value)}/>

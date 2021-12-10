@@ -50,14 +50,14 @@ function EventsPage(props) {
     rectangle32,
   } = props;
 const [tabledata,settabledata]=useState([]);
-const [q,setQ]=useState("");
-const search=(rows)=>{
-return rows.filter(row=>row.about.indexOf(q)>-1);
-}
-const tableInstant=useTable({
-  columns,
-  data:search(tabledata) 
-})
+ const [q,setQ]=useState("");
+ const search=(rows)=>{
+ return rows.filter(row=>row.about.indexOf(q)>-1);
+ }
+ const tableInstant=useTable({
+   columns,
+   data:search(tabledata) 
+ })
 const {
   getTableBodyProps,
   getTableProps,

@@ -76,7 +76,7 @@ React.useEffect(()=>{
             <img className="logo-2" src={logo} />
             <img className="image-4-2" src={image4} />
             <div className="overlap-group-4">
-            <img className="icon-search-icon-2" src="/img/icon-search-icon@2x.svg" />
+              <img className="icon-search-icon-2" src="/img/icon-search-icon@2x.svg" />
             
               <input className="searchplaceholde-2 mulish-bold-roman-24px" type="text" placeholder={searchPlaceholde}
               value={q} onChange={e=>setQ(e.target.value)}/>
@@ -119,7 +119,10 @@ React.useEffect(()=>{
           </div>
         </div>
         <div className="flex-row-4">
-        <table {...getTableProps()}>
+          <div>
+
+          
+          <table {...getTableProps()}>
             <thead>
               {headerGroups.map(headerGroup=>(
                 <tr {...headerGroup.getHeaderGroupProps()}>
@@ -151,6 +154,11 @@ React.useEffect(()=>{
             </tbody>
           </table>
         </div>
+        <div className="flex-col-6">
+          <img className="rectangle-33" src={rectangle33}/>
+          <img className="rectangle-32" src={rectangle32}/>
+      </div>
+      </div>
       </div>
     </div>
   );

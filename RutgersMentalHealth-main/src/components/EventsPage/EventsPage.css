@@ -108,6 +108,7 @@
   top: 0;
   width: 40px;
 }
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -115,13 +116,13 @@ table {
 }
 
 table td, table th {
-  border: 1px solid #ddd;
+  border: 1px solid rgba(239, 246, 247, 0.842);
   padding: 8px;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even){background-color: #e7f0f0;}
 
-table tr:hover {background-color: #ddd;}
+table tr:hover {background-color: rgb(81, 230, 180);}
 
 table th {
   padding-top: 12px;
@@ -172,6 +173,12 @@ table th {
   padding: 10px 6px;
 }
 
+.overlap-group6:hover,
+.overlap-group5-1:hover,
+.overlap-group3-2:hover,
+.overlap-group7:hover{
+  background-color: var(--dark-gray);
+}
 .rectangle-28 {
   height: 61px;
   object-fit: cover;
